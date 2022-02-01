@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: #333;
+    overflow-x: hidden;
+}
+/* .pop-up-container{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    transform: translate(500px);
+    transition: 1s;
+    z-index: 10000;
+}
+.col-3{
+    border-left: 10px solid green !important;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 5px;
+}
+.col-7{
+    font-weight: bold;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+.col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* chat section */
+
+#message-container {
+  margin: 20px auto;  
+  width: 80%;
+  max-width: 1200px;
+  height: 200px;
+}
+#message-container div {
+  background-color: rgb(30, 65, 218);
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+}
+#message-container div:nth-child(2n) {
+  background-color: #FFF;
+  font-weight: bold;
+  color: #333;
+}
+
+form{
+    /* border: 2px solid red; */
+    margin: 20px 200px;
+    display: flex;
+    flex-direction: row;
+}
+form input{
+    width: 70%;
+    border-right: 2px solid #333;
+    font-size: 2rem;
+    word-wrap: break-word;
+    border-radius: 2px;
+}
+form button{
+    width: 30%;
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 2px;
+}
+
+#video-grid {
+    /* border: 2px solid red; */
+    background-color: rgb(39 41 46);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+  video {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 20px 30px;
+    box-shadow: 0 0 1px 2px black;
+    border-radius: 6px;
+  }
+
+@media (max-width:700px){
+    form{
+        /* border: 2px solid red; */
+        margin: 20px 50px;
+    }
+    form input{
+        font-size: 1rem;
+    }
+    form button{
+        font-size: 1rem;
+    }
+}
